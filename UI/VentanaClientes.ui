@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>931</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(158, 244, 255);
+border-radius:20px;
+border:2px solid;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLineEdit" name="txtDni">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>90</y>
+         <width>331</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 5px;
+color: rgb(12, 12, 12);
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblDni">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>70</y>
+         <width>60</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;
+color: rgb(25, 25, 25);</string>
+       </property>
+       <property name="text">
+        <string>DNI:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>10</y>
+         <width>231</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;
+font: 40pt &quot;Arial&quot;;
+color: rgb(25, 25, 25);</string>
+       </property>
+       <property name="text">
+        <string>CLIENTES</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+       <property name="indent">
+        <number>-1</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>190</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;
+color: rgb(25, 25, 25);</string>
+       </property>
+       <property name="text">
+        <string>Dirección</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>130</y>
+         <width>111</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;
+color: rgb(25, 25, 25);</string>
+       </property>
+       <property name="text">
+        <string>Apellido Paterno:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>130</y>
+         <width>60</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;
+color: rgb(25, 25, 25);</string>
+       </property>
+       <property name="text">
+        <string>Nombres:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtNombres">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>150</y>
+         <width>251</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 5px;
+color: rgb(12, 12, 12);</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtApellidoPaterno">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>150</y>
+         <width>301</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 5px;
+color: rgb(12, 12, 12);</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtDireccion">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>210</y>
+         <width>431</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 5px;
+color: rgb(12, 12, 12);</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>190</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;
+color: rgb(25, 25, 25);</string>
+       </property>
+       <property name="text">
+        <string>Teléfono</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtTelefono">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>210</y>
+         <width>431</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 5px;
+color: rgb(25, 25, 25);</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnRegistrar">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>470</y>
+         <width>141</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background-color: rgb(58, 184, 255);
+font:14pt &quot;Monaco&quot;;
+
+}
+
+QPushButton:hover{
+
+background-color: rgb(0, 255, 69);
+font:14pt &quot;Monaco&quot;;
+
+}
+
+color: rgb(25, 25, 25);</string>
+       </property>
+       <property name="text">
+        <string>Registrar</string>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tblClientes">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>240</y>
+         <width>881</width>
+         <height>201</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 10px;
+background-color: rgb(255, 255, 255);
+color: rgb(12, 12, 12);
+</string>
+       </property>
+       <property name="rowCount">
+        <number>0</number>
+       </property>
+       <property name="columnCount">
+        <number>6</number>
+       </property>
+       <attribute name="horizontalHeaderVisible">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="horizontalHeaderCascadingSectionResizes">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>143</number>
+       </attribute>
+       <attribute name="horizontalHeaderHighlightSections">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="horizontalHeaderMinimumSectionSize">
+        <number>19</number>
+       </attribute>
+       <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderDefaultSectionSize">
+        <number>30</number>
+       </attribute>
+       <attribute name="verticalHeaderMinimumSectionSize">
+        <number>20</number>
+       </attribute>
+       <column>
+        <property name="text">
+         <string notr="true">DNI</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="textAlignment">
+         <set>AlignCenter</set>
+        </property>
+        <property name="background">
+         <color alpha="0">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>NOMBRES</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="textAlignment">
+         <set>AlignCenter</set>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>APELLIDO PATERNO</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="textAlignment">
+         <set>AlignCenter</set>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>APELLIDO MATERNO</string>
+        </property>
+        <property name="textAlignment">
+         <set>AlignCenter</set>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>DIRECCIÓN</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="textAlignment">
+         <set>AlignCenter</set>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>TELÉFONO</string>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="textAlignment">
+         <set>AlignCenter</set>
+        </property>
+       </column>
+      </widget>
+      <widget class="QPushButton" name="btnModificar">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>470</y>
+         <width>141</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background-color: rgb(58, 184, 255);
+font:14pt &quot;Monaco&quot;;
+
+}
+
+QPushButton:hover{
+
+background-color: rgb(0, 255, 69);
+font:14pt &quot;Monaco&quot;;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Modificar</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnConsultar">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>470</y>
+         <width>141</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background-color: rgb(58, 184, 255);
+font:14pt &quot;Monaco&quot;;
+
+}
+
+QPushButton:hover{
+
+	background-color: rgb(0, 255, 69);
+font:14pt &quot;Monaco&quot;;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Consultar</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnEliminar">
+       <property name="geometry">
+        <rect>
+         <x>540</x>
+         <y>470</y>
+         <width>141</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background-color: rgb(58, 184, 255);
+font:14pt &quot;Monaco&quot;;
+
+}
+
+QPushButton:hover{
+
+	background-color: rgb(0, 255, 69);
+font:14pt &quot;Monaco&quot;;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Eliminar</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnListar">
+       <property name="geometry">
+        <rect>
+         <x>710</x>
+         <y>470</y>
+         <width>141</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background-color: rgb(58, 184, 255);
+font:14pt &quot;Monaco&quot;;
+
+}
+
+QPushButton:hover{
+
+	background-color: rgb(0, 255, 69);
+font:14pt &quot;Monaco&quot;;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Listar</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>710</x>
+         <y>10</y>
+         <width>171</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../img/cliente.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtApellidoMaterno">
+       <property name="geometry">
+        <rect>
+         <x>600</x>
+         <y>150</y>
+         <width>311</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 5px;
+color: rgb(12, 12, 12);</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>600</x>
+         <y>130</y>
+         <width>111</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;
+color: rgb(25, 25, 25);</string>
+       </property>
+       <property name="text">
+        <string>Apellido Materno:</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnGrabar">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>470</y>
+         <width>141</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background-color: rgb(58, 184, 255);
+font:14pt &quot;Monaco&quot;;
+
+}
+
+QPushButton:hover{
+
+background-color: rgb(0, 255, 69);
+font:14pt &quot;Monaco&quot;;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Grabar</string>
+       </property>
+      </widget>
+      <zorder>btnGrabar</zorder>
+      <zorder>txtDni</zorder>
+      <zorder>lblDni</zorder>
+      <zorder>label_2</zorder>
+      <zorder>label_3</zorder>
+      <zorder>label_4</zorder>
+      <zorder>label_6</zorder>
+      <zorder>txtNombres</zorder>
+      <zorder>txtApellidoPaterno</zorder>
+      <zorder>txtDireccion</zorder>
+      <zorder>label_8</zorder>
+      <zorder>txtTelefono</zorder>
+      <zorder>btnRegistrar</zorder>
+      <zorder>tblClientes</zorder>
+      <zorder>btnModificar</zorder>
+      <zorder>btnConsultar</zorder>
+      <zorder>btnEliminar</zorder>
+      <zorder>btnListar</zorder>
+      <zorder>label_11</zorder>
+      <zorder>txtApellidoMaterno</zorder>
+      <zorder>label_12</zorder>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

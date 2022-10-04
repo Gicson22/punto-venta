@@ -1,0 +1,2 @@
+71102367,Gicson Rivas,Teclado,100,80,120,200,Proveedor 1,Almacén 1
+C001,Perla,Mouse,200,180,150,160,Proveedor 2,Almacén 2
